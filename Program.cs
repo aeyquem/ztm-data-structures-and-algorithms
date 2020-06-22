@@ -7,6 +7,7 @@ using data_structures_and_algorithms.StacksAndQueues;
 using data_structures_and_algorithms.Trees;
 using data_structures_and_algorithms.Algorithms.Recursion;
 using data_structures_and_algorithms.Algorithms.Sorting;
+using data_structures_and_algorithms.Algorithms.Searching;
 
 namespace data_structures_and_algorithms
 {
@@ -26,8 +27,11 @@ namespace data_structures_and_algorithms
             {
                 tree.Insert(item);
             }
+            var value = 9;
 
-            var result = tree.BreadFirstSearch(19);
+            var result = tree.BreadFirstSearch(value);
+            var resultR = tree.BreadFirstSearchRecursive(value);
+            var resultR2 = tree.BreadFirstSearchRecursive2(value);
         }
     }
 }

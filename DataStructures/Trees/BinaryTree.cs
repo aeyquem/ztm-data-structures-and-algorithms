@@ -137,33 +137,6 @@ namespace data_structures_and_algorithms.Trees
             {
                 successor = null;
             }
-
-
-        }
-
-        public BNode<int> BreadFirstSearch(int value)
-        {
-            var node = Head;
-            var queue = new Queue<BNode<int>>();
-            queue.Enqueue(node);
-
-            while (queue.Count > 0)
-            {
-                var tempNode = queue.Dequeue();
-
-                if (tempNode.Value == value) return tempNode;
-
-                if (tempNode.Right != null)
-                {
-                    queue.Enqueue(tempNode.Right);
-                }
-                if (tempNode.Left != null)
-                {
-                    queue.Enqueue(tempNode.Left);
-                }
-            }
-
-            return null;
         }
     }
 }
