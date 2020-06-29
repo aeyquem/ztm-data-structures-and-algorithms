@@ -1,4 +1,4 @@
-namespace data_structures_and_algorithms.LinkedLists
+namespace data_structures_and_algorithms
 {
     public class Node<T>
     {
